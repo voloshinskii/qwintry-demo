@@ -1,5 +1,6 @@
 import React from 'react';
-import { ScrollView, View, Text } from 'react-native';
+import { ScrollView } from 'react-native';
+import TodosLists from '../../features/todos/TodosLists';
 
 function TodosScreen() {
 	return (
@@ -10,12 +11,10 @@ function TodosScreen() {
 			}}
 			contentContainerStyle={{
 				paddingTop: 60,
-				paddingHorizontal: 20
+				paddingHorizontal: 20,
 			}}
 		>
-			<View>
-				<Text style={{ color: 'black' }}>Home Screen</Text>
-			</View>
+			<TodosLists />
 		</ScrollView>
 	);
 }
