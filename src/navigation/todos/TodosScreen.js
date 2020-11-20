@@ -12,10 +12,12 @@ function TodosScreen() {
 			contentContainerStyle={{
 				paddingTop: 60,
 				paddingHorizontal: 20,
-				paddingBottom: 180,
+				paddingBottom: 250,
 			}}
 		>
-			<TodosLists />
+			<>
+				<TodosLists />
+			</>
 		</ScrollView>
 	);
 }
