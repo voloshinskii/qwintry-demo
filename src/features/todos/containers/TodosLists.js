@@ -15,7 +15,7 @@ function TodosLists() {
 	const urgentTodos = useSelector(getUrgentTodos);
 	const windowWidth = Dimensions.get('window').width;
 	const orientation = useOrientation();
-	const shouldUsePortraitMode = orientation === 'PORTRAIT' && windowWidth < 900;
+	const shouldUsePortraitMode = orientation === 'PORTRAIT' && windowWidth < 850;
 
 	const styles = shouldUsePortraitMode ? stylesPortrait : stylesLandscape;
 

@@ -5,7 +5,7 @@ import TodosScreen from './todos/TodosScreen';
 
 const Stack = createNativeStackNavigator();
 
-function AppWithNavigation() {
+function AppNavigation() {
 	return (
 		<NavigationContainer>
 			<Stack.Navigator initialRouteName="Todos">
@@ -15,4 +15,4 @@ function AppWithNavigation() {
 	);
 }
 
-export default AppWithNavigation;
+export default AppNavigation;
