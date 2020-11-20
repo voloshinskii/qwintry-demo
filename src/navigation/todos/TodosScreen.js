@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import TodosLists from '../../features/todos/TodosLists';
+import TodosLists from '../../features/todos/containers/TodosLists';
 
 function TodosScreen() {
 	return (
@@ -12,6 +12,7 @@ function TodosScreen() {
 			contentContainerStyle={{
 				paddingTop: 60,
 				paddingHorizontal: 20,
+				paddingBottom: 180,
 			}}
 		>
 			<TodosLists />

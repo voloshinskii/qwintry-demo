@@ -2,10 +2,16 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import Title from './Title';
 
-const TitleWithCounter = ({ text, children, count = 0, titleStyle = {} }) => (
+const TitleWithCounter = ({
+	text,
+	children,
+	countColor = 'black',
+	count = 0,
+	titleStyle = {},
+}) => (
 	<View style={[styles.container]}>
 		<Title style={[titleStyle, { marginBottom: 0, marginRight: 6 }]}>{text || children}</Title>
-		<Text style={[styles.counter]}>({count})</Text>
+		<Text style={[styles.counter, { color: countColor }]}>({count})</Text>
 	</View>
 );
 

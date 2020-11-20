@@ -46,8 +46,16 @@ function Checkbox({
 					]}
 				/>
 			</TouchableOpacity>
-			<Animated.View style={{ opacity: textOpacity }}>
-				<Text style={[styles.text, textStyle]}>{text || children}</Text>
+			<Animated.View
+				style={{
+					flex: 1,
+					paddingVertical: 3,
+					borderBottomWidth: 0.5,
+					borderBottomColor: 'grey',
+					opacity: textOpacity,
+				}}
+			>
+				<Text style={[styles.text, textStyle]}>{children || text}</Text>
 			</Animated.View>
 		</View>
 	);
@@ -57,16 +65,20 @@ const styles = StyleSheet.create({
 	container: {
 		flexDirection: 'row',
 		alignItems: 'center',
+		zIndex: 50,
+		backgroundColor: 'white',
+		width: '100%',
 	},
 	circle: {
-		width: 28,
-		height: 28,
+		width: 24,
+		height: 24,
 		borderRadius: 1000,
 		borderWidth: 2,
 		borderColor: 'black',
 		marginRight: 12,
 	},
 	text: {
+		paddingVertical: 12,
 		fontSize: 18,
 		color: 'black',
 		fontWeight: '500',
